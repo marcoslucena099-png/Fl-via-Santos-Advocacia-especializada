@@ -1,0 +1,6 @@
+{
+  "name": "Flávia Santos Advocacia",
+  "description": "Escritório de advocacia especializado nas áreas Cível, Trabalhista e Previdenciário.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
