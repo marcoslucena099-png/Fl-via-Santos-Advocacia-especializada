@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Instagram, Scale, BookOpen, Award } from 'lucide-react';
+import { LiquidMetalButton } from "./ui/liquid-metal-button";
 
 export default function About() {
   return (
@@ -28,6 +29,8 @@ export default function About() {
                 src="/flavia_apresentacao.png" 
                 alt="Flávia Santos - Advogada" 
                 className="w-full h-full object-cover object-top"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             
@@ -76,21 +79,20 @@ export default function About() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <a 
-                href="https://www.instagram.com/eusouflaviasantos/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex justify-center items-center gap-2 bg-brand-dark border border-white/10 text-white px-5 py-3 md:px-6 md:py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:border-gold-500 hover:text-gold-500 transition-colors"
-              >
-                <Instagram size={16} />
-                Siga no Instagram
-              </a>
-              <a 
-                href="#contato" 
-                className="inline-flex justify-center items-center bg-gold-500 text-brand-dark px-5 py-3 md:px-6 md:py-3.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg hover:bg-gold-400 transition-colors"
-              >
-                Fale Comigo
-              </a>
+              <div className="flex items-center justify-center">
+                <LiquidMetalButton
+                  href="https://www.instagram.com/eusouflaviasantos/"
+                  label="Siga no Instagram"
+                  className="sm:w-auto w-full"
+                />
+              </div>
+              <div className="flex items-center justify-center">
+                <LiquidMetalButton
+                  href="https://wa.me/558398759710"
+                  label="Fale Comigo"
+                  className="sm:w-auto w-full"
+                />
+              </div>
             </div>
           </motion.div>
 

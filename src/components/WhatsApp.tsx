@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export default function WhatsAppButton() {
   // Replace with actual WhatsApp number
-  const phoneNumber = "5583900000000"; 
+  const phoneNumber = "558398759710"; 
   const message = encodeURIComponent("Olá! Gostaria de agendar uma consulta online.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
@@ -13,7 +13,7 @@ export default function WhatsAppButton() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 0.5 }}
-        className="bg-brand-surface px-4 py-2 rounded-full shadow-xl text-xs font-bold border border-white/10 text-slate-300"
+        className="hidden sm:block bg-brand-surface px-4 py-2 rounded-full shadow-xl text-xs font-bold border border-white/10 text-slate-300"
       >
         Como podemos ajudar?
       </motion.div>

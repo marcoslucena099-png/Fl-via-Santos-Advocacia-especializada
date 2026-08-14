@@ -1,3 +1,4 @@
+import { LiquidMetalButton } from "./ui/liquid-metal-button";
 import { Menu, X, Phone } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -16,13 +17,13 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-white/5 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-24">
+        <div className="flex justify-between h-20 md:h-24">
           <div className="flex items-center space-x-3">
             {!imgError ? (
               <img 
                 src="/logo.png" 
                 alt="Flávia Santos Advocacia Logo" 
-                className="h-14 w-auto object-contain"
+                className="h-10 sm:h-12 md:h-14 w-auto object-contain"
                 onError={() => setImgError(true)}
               />
             ) : (
@@ -51,12 +52,9 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <a
-              href="#contato"
-              className="bg-gold-500 text-brand-dark px-6 py-2 rounded-full hover:bg-gold-400 transition-all text-xs font-bold uppercase tracking-widest shadow-lg shadow-gold-500/20"
-            >
-              Agendar Consulta
-            </a>
+            <div className="flex items-center justify-center">
+              <LiquidMetalButton href="https://wa.me/558398759710" label="Agendar Consulta" />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -92,7 +90,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#contato"
+                href="https://wa.me/558398759710"
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-center gap-2 mt-4 bg-gold-500 text-brand-dark px-5 py-3 rounded-full hover:bg-gold-400 transition-colors shadow-lg font-medium w-full"
               >

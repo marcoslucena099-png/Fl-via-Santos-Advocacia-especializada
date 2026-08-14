@@ -76,6 +76,8 @@ export default function Services() {
                   src={service.image} 
                   alt={service.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute bottom-4 left-4 z-20 w-10 h-10 bg-brand-surface border border-white/10 flex items-center justify-center rounded-full shadow-md">
                   <service.icon className="w-5 h-5 text-gold-500" />

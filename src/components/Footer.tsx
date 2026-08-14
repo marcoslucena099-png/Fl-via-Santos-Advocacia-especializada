@@ -25,6 +25,7 @@ export default function Footer() {
                   alt="Flávia Santos Advocacia Logo" 
                   className="h-14 w-auto object-contain brightness-0 invert opacity-90"
                   onError={() => setImgError(true)}
+                  loading="lazy"
                 />
               ) : (
                 <div className="flex items-center space-x-3">
@@ -50,7 +51,7 @@ export default function Footer() {
               <a href="#" className="w-10 h-10 rounded-full bg-brand-surface border border-gold-500/20 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-brand-dark hover:border-gold-500 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#contato" className="w-10 h-10 rounded-full bg-brand-surface border border-gold-500/20 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-brand-dark hover:border-gold-500 transition-colors">
+              <a href="https://wa.me/558398759710" className="w-10 h-10 rounded-full bg-brand-surface border border-gold-500/20 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-brand-dark hover:border-gold-500 transition-colors">
                 <Mail size={20} />
               </a>
             </div>
@@ -70,7 +71,7 @@ export default function Footer() {
               <li><a href="#sobre" className="text-sm text-brand-beige hover:text-gold-400 transition-colors uppercase tracking-wider">Quem Sou Eu</a></li>
               <li><a href="#areas" className="text-sm text-brand-beige hover:text-gold-400 transition-colors uppercase tracking-wider">Áreas de Atuação</a></li>
               <li><a href="#localizacao" className="text-sm text-brand-beige hover:text-gold-400 transition-colors uppercase tracking-wider">Localização</a></li>
-              <li><a href="#contato" className="text-sm text-brand-beige hover:text-gold-400 transition-colors uppercase tracking-wider">Agendar Consulta</a></li>
+              <li><a href="https://wa.me/558398759710" className="text-sm text-brand-beige hover:text-gold-400 transition-colors uppercase tracking-wider">Agendar Consulta</a></li>
             </ul>
           </motion.div>
 
